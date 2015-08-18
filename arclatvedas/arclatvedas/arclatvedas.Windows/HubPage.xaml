@@ -53,8 +53,8 @@
                         AutomationProperties.Name="Back"
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button"/>
-                    <TextBlock x:Name="pageTitle" x:Uid="Header" Text="application name" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        VerticalAlignment="Top" IsHitTestVisible="false" TextWrapping="NoWrap" />
+                    <TextBlock x:Name="Arc_Lat_Védas" x:Uid="Header" Text="Arc Lat'Védas" Style="{StaticResource HeaderTextBlockStyle}" 
+                        VerticalAlignment="Top" IsHitTestVisible="false" TextWrapping="NoWrap" Margin="0,0,-597,-52" Grid.ColumnSpan="2" />
                 </Grid>
             </Hub.Header>
             <HubSection Width="780" Margin="0,0,80,0">
