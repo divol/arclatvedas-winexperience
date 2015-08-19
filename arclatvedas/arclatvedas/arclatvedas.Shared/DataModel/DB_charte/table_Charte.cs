@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using SQLite;
 
-public class table_Charte
+public class Charte
 {
     [PrimaryKey]
     public int Id { get; set; }
@@ -10,9 +10,9 @@ public class table_Charte
     public long hight { get; set; }
     public long low { get; set; }
 
-    public List<table_Groupe> groupes;
+    public List<Groupe> groupes;
 
-    public table_Charte()
+    public Charte()
     {
 
     }

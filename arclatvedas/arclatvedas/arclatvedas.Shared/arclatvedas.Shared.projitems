@@ -15,11 +15,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)DataModel\table_Fleche.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)DataModel\table_Groupe.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DB_charte\table_Charte.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DB_charte\table_Fleche.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DB_charte\table_Groupe.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DB_distance\table_Distance.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DB_distance\table_Hausse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DB_tir\table_Tir.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DB_tir\table_Score.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\SampleDataSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\table_Arrow.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)DataModel\table_Charte.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\table_Materiel.cs" />
     <Content Include="$(MSBuildThisFileDirectory)DataModel\SampleData.json" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\LightGray.png" />

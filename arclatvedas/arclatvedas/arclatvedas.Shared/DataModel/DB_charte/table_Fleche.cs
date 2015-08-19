@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using SQLite;
 
-public class table_Fleche
+public class Fleche
 {
     [PrimaryKey]
     public int Id { get; set; }
