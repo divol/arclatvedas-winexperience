@@ -1,9 +1,11 @@
 ﻿using System;
-using SQLite;
+using SQLite.Net.Attributes;
+using SQLiteNetExtensions.Attributes;
 
-public class table_Arrow
+
+public class Arrow
 {
-    [PrimaryKey]
+    [PrimaryKey,AutoIncrement]
     public int Id { get; set; }
     public string name { get; set; }
     public double length { get; set; }
@@ -13,7 +15,7 @@ public class table_Arrow
     public string point { get; set; }
     public string dateAchat { get; set; }
     public string comment { get; set; }
-    public table_Arrow()
+    public Arrow()
     {
 
     }

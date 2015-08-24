@@ -2,20 +2,22 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
-using SQLite;
-using Windows.Foundation;
+using SQLite.Net.Attributes;
+using SQLiteNetExtensions.Attributes;
 
 public class Tir
 
 {
-    [PrimaryKey]
+    [PrimaryKey, AutoIncrement]
     public int Id { get; set; }
     public string location { get; set; }
     public string date { get; set; }
     public string distance { get; set; }
     public string comment { get; set; }
     public int blasonType { get; set; }
-    public List<Score> scores; // 
+
+    [OneToMany]
+    public List<Score> scores { get; set; }
 
 
 }

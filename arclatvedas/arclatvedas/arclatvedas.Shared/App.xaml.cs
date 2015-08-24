@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 using arclatvedas.Common;
+using arclatvedas.DataModel;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -54,7 +55,8 @@ namespace arclatvedas
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
-
+            DBManager.createTables();
+            
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,

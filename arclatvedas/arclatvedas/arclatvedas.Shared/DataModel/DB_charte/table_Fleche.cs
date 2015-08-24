@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SQLite;
+using SQLite.Net.Attributes;
+using SQLiteNetExtensions.Attributes;
 
 public class Fleche
 {
-    [PrimaryKey]
+    [PrimaryKey, AutoIncrement]
     public int Id { get; set; }
     public string modele { get; set; }
     public string name { get; set; }
@@ -16,6 +17,7 @@ public class Fleche
     public float taille { get; set; }
     public string fabricant { get; set; }
 
-
+    [ManyToMany(typeof(GroupeFleche))]
+    public List<Groupe> groupes { get; set; }
 }
 

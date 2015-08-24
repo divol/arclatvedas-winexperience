@@ -1,13 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using SQLite;
+using SQLite.Net.Attributes;
+using SQLiteNetExtensions.Attributes;
 
 public class Groupe
 {
 
-    [PrimaryKey]
+    [PrimaryKey,AutoIncrement]
     public int Id { get; set; }
     public string name { get; set; }
-    public List<Fleche> fleches;
 
+    [ManyToMany(typeof(CharteGroupe))]
+    public List<Charte> chartes { get; set; }
+
+    [ManyToMany(typeof(GroupeFleche))]
+    public  List<Fleche> fleches { get; set; }
+
+
+    public Groupe()
+    {
+    }
 }
